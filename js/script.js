@@ -5,6 +5,10 @@ const key = "7bf1eb792d7636a35af73cd8a864d47f"
 function setHtml (data) {
     console.log(data)
     document.querySelector('.city').innerHTML = data.name
+    document.querySelector('.temp').innerHTML = Math.floor(data.main.temp)  + ' C '
+    document.querySelector('.nublado').innerHTML = data.weather[0].description
+    document.querySelector('.unidade').innerHTML = data.main.humidity + ' % '
+    document.querySelector('.icon').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
 }
 
 
