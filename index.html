@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>WeatherCard</title>
 </head>
 <body>
-    
+    <div class="content">
+        <div class="search_section">
+            <input class="search" type="text" name="" id="" placeholder="Write the city">
+            <button onclick="getInputData()">Search</button>
+        </div>
+        <div class="temp_info">
+            <h2 class="city">City</h2>
+            <p>Temp</p>
+        </div>
+        <div class="img-prev">
+            <img src="https://openweathermap.org/img/wn/04n.png" alt="">
+            <span>Nublado</span>
+        </div>
+        <p>Unidade 70%</p>
+    </div>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
