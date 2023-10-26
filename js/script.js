@@ -7,7 +7,7 @@ function setHtml (data) {
     document.querySelector('.city').innerHTML = data.name
     document.querySelector('.temp').innerHTML = Math.floor(data.main.temp)  + ' C '
     document.querySelector('.nublado').innerHTML = data.weather[0].description
-    document.querySelector('.unidade').innerHTML = data.main.humidity + ' % '
+    document.querySelector('.unidade').innerHTML = 'Humidade -  ' +  data.main.humidity + ' % '
     document.querySelector('.icon').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
 }
 
